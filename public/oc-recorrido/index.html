@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#00000e">
+  <meta name="description" content="OC Grupo Inmobiliario. Un recorrido por nuevas formas de vivir e invertir en Guatemala.">
+  <title>OC Grupo Inmobiliario · Una nueva perspectiva</title>
+  <link rel="preload" as="image" href="assets/edificio-continuo-oc.png">
+  <link rel="preload" as="font" href="assets/fonts/Metropolis-Regular.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="assets/fonts/Metropolis-Medium.woff2" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#inicio">Ir al contenido</a>
+  <div class="world" aria-hidden="true">
+    <canvas id="architecture"></canvas>
+    <div class="shade"></div>
+    <div class="edge-line"></div>
+  </div>
+  <header>
+    <a class="brand" href="#inicio" aria-label="OC Grupo Inmobiliario · Inicio"><img src="assets/oc-logo.svg" width="110" height="91" alt="OC Grupo Inmobiliario"></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+    <nav id="main-nav" aria-label="Navegación principal">
+      <a href="#inicio" aria-current="location">Inicio</a><a href="#nosotros">Nosotros</a><a href="#propiedades">Propiedades</a><a href="#contacto">Contacto</a>
+    </nav>
+    <a href="#contacto" class="header-contact">Hablemos <span>↗</span></a>
+  </header>
+  <aside class="route" aria-label="Recorrido">
+    <a href="#inicio" aria-label="01 Inicio" aria-current="location"><span>01</span><i></i></a>
+    <a href="#nosotros" aria-label="02 Nosotros"><span>02</span><i></i></a>
+    <a href="#propiedades" aria-label="03 Propiedades"><span>03</span><i></i></a>
+    <a href="#contacto" aria-label="04 Contacto"><span>04</span><i></i></a>
+  </aside>
+  <main>
+    <section id="inicio" class="chapter" aria-labelledby="title-inicio">
+      <div class="chapter-inner"><div class="copy">
+        <p class="eyebrow"><span></span> TERRENOS Y CASAS EN GUATEMALA</p>
+        <h1 id="title-inicio">Tu próximo<br>capítulo<br>comienza aquí.</h1>
+        <p class="description">Terrenos para imaginar.<br>Casas para vivir. Un lugar para ti.</p>
+        <a class="button" href="#propiedades">Explorar propiedades <span>↗</span></a>
+        <a class="scroll-invitation" href="#nosotros"><span class="scroll-track"><i></i></span> Desliza para descubrir</a>
+      </div><p class="architect-note">01 — AZOTEA & TERRAZAS<span>Un horizonte de posibilidades.</span></p></div>
+    </section>
+    <section id="nosotros" class="chapter" aria-labelledby="title-nosotros">
+      <div class="chapter-inner"><div class="copy">
+        <p class="eyebrow"><span></span> NOSOTROS</p>
+        <h2 id="title-nosotros">Visión que<br>construye<br>confianza.</h2>
+        <p class="description">Cada búsqueda comienza con una idea de futuro. Queremos ayudarte a encontrar el espacio para hacerla realidad.</p>
+        <div class="values"><article><span>Misión</span><p>Conectar personas con su próximo hogar.</p></article><article><span>Visión</span><p>Crear nuevas oportunidades en Guatemala.</p></article></div>
+        <a class="text-link" href="#propiedades">Encuentra tu lugar <span>↓</span></a>
+      </div><p class="architect-note">02 — NIVELES RESIDENCIALES<span>Arquitectura que acompaña tu vida.</span></p></div>
+    </section>
+    <section id="propiedades" class="chapter" aria-labelledby="title-propiedades">
+      <div class="chapter-inner"><div class="copy gallery-copy">
+        <p class="eyebrow"><span></span> PROPIEDADES</p>
+        <h2 id="title-propiedades">Encuentra tu<br>próximo lugar.</h2>
+        <p class="description">Explora distintas maneras de imaginar tu futuro.</p>
+        <div class="filters" role="group" aria-label="Filtrar propiedades"><button aria-pressed="true" data-filter="all">Todas</button><button aria-pressed="false" data-filter="casa">Casas</button><button aria-pressed="false" data-filter="terreno">Terrenos</button></div>
+        <div class="properties">
+          <button class="property" data-type="casa" data-property="Casa con jardín"><span class="property-image" data-crop="50,1010,235,100"></span><span class="property-detail"><small>CASAS</small><strong>Casa con jardín</strong><b>↗</b></span></button>
+          <button class="property" data-type="terreno" data-property="Terreno residencial"><span class="property-image" data-crop="297,1010,228,100"></span><span class="property-detail"><small>TERRENOS</small><strong>Terreno residencial</strong><b>↗</b></span></button>
+          <button class="property" data-type="casa" data-property="Casa contemporánea"><span class="property-image" data-crop="538,1010,217,100"></span><span class="property-detail"><small>CASAS</small><strong>Casa contemporánea</strong><b>↗</b></span></button>
+        </div>
+        <p class="concept-note">Selección conceptual · Imágenes ilustrativas</p>
+      </div><p class="architect-note">03 — ESPACIOS PARA ELEGIR<span>Una nueva forma de vivir e invertir.</span></p></div>
+    </section>
+    <section id="contacto" class="chapter" aria-labelledby="title-contacto">
+      <div class="chapter-inner"><div class="copy contact-copy">
+        <p class="eyebrow"><span></span> CONTACTO</p>
+        <h2 id="title-contacto">Conversemos<br>sobre tu próximo<br>hogar.</h2>
+        <form id="contact-form">
+          <div class="form-row"><label>Tu nombre<input name="nombre" autocomplete="name" placeholder="Nombre completo" required></label><label>Tu correo<input name="correo" type="email" autocomplete="email" placeholder="tu@correo.com" required></label></div>
+          <label>¿Qué estás buscando?<textarea name="mensaje" rows="2" placeholder="Una casa, un terreno, una nueva oportunidad…" required></textarea></label>
+          <button class="button" type="submit">Preparar consulta <span>↗</span></button>
+          <p class="concept-note">Demo: descarga tu consulta. No se envían datos.</p>
+          <p id="form-status" role="status"></p>
+        </form>
+      </div><p class="architect-note">04 — BIENVENIDO A CASA<span>OC Grupo Inmobiliario · Guatemala</span></p></div>
+    </section>
+  </main>
+  <footer class="hud">
+    <div class="chapter-status"><span id="chapter-number">01 / 04</span><span class="separator"></span><span id="chapter-name">AZOTEA</span></div>
+    <button id="play" type="button" aria-pressed="false"><span id="play-icon">▷</span><span id="play-label">Reproducir recorrido</span></button>
+    <span class="lighting" id="lighting">LUZ DE DÍA</span>
+    <div class="progress-track"><span id="progress"></span></div>
+  </footer>
+  <dialog id="property-dialog" aria-labelledby="property-title">
+    <button class="close" aria-label="Cerrar">×</button><p class="eyebrow">TU PRÓXIMO LUGAR</p><h2 id="property-title"></h2><div id="property-preview" class="property-image"></div><p>Una propuesta para imaginar tu próximo capítulo en Guatemala.</p><p class="concept-note">Propiedad conceptual. No representa un anuncio disponible.</p><button class="button" id="ask-property">Quiero más información <span>↗</span></button>
+  </dialog>
+  <script src="journey.js"></script>
+</body>
+</html>
